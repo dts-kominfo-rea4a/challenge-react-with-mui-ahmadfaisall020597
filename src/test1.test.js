@@ -11,7 +11,7 @@ describe('Header', () => {
         const title = screen.getByText(/call a friend/i);
         expect(title).toBeInTheDocument();
     });
-    
+
     it('should have application subtitle', async () => {
         render(<Header></Header>);
         const title = screen.getByText(/your friendly contact app/i);
